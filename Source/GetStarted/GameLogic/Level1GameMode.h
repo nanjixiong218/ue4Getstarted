@@ -13,5 +13,13 @@ UCLASS()
 class GETSTARTED_API ALevel1GameMode : public AGetStartedGameModeBase
 {
 	GENERATED_BODY()
-	
+
+public:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="UI Widgets")
+	TSubclassOf<class UUserWidget> MainUIClass;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "UI Widgets")
+	UUserWidget* MainUI;
+protected:
+	virtual void BeginPlay() override;
 };
