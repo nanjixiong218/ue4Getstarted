@@ -6,6 +6,7 @@
 #include "GameFramework/Character.h"
 #include "MainPlayer.generated.h"
 
+
 UENUM(BlueprintType)
 enum class EPlayerMovementStatus :uint8 {
 	EPMS_Normal UMETA(DisplayName="Normal"),

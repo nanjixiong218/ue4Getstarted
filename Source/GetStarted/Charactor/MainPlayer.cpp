@@ -9,10 +9,14 @@
 #include "Components/CapsuleComponent.h"
 #include "Components/InputComponent.h"
 
+
+
+
 // Sets default values
 AMainPlayer::AMainPlayer()
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+
 	PrimaryActorTick.bCanEverTick = true;
 	SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArm"));
 	SpringArm->SetupAttachment(GetRootComponent());
